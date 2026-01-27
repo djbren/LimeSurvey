@@ -1,5 +1,7 @@
+.git/
+.github/
 docs/
 tests/
-installer/
-*.pdf
-*.zip
+node_modules/
+tmp/*
+upload/*
