@@ -2,6 +2,5 @@
 .github/
 docs/
 tests/
-node_modules/
 tmp/*
 upload/*
