@@ -26,10 +26,10 @@
 return array(
     'components' => array(
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;port=3306;dbname=limesurvey;',
+            'connectionString' => 'mysql:host=MYSQL_ADDON_HOST;port=MYSQL_ADDON_PORT;dbname=MYSQL_ADDON_DB;',
             'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => 'root',
+            'username' => 'MYSQL_ADDON_PASSWORD',
+            'password' => 'MYSQL_ADDON_PASSWORD',
             'charset' => 'utf8mb4',
             'tablePrefix' => 'lime_',
         ),
