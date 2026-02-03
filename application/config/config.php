@@ -26,10 +26,12 @@
 return array(
     'components' => array(
         'db' => array(
-            'connectionString' => 'mysql:host=MYSQL_ADDON_HOST;port=MYSQL_ADDON_PORT;dbname=MYSQL_ADDON_DB;',
+            'connectionString' => 'mysql:host=' . getenv('MYSQL_ADDON_HOST') .
+                                  ';port=' . getenv('MYSQL_ADDON_PORT') .
+                                  ';dbname=' . getenv('MYSQL_ADDON_DB'),
             'emulatePrepare' => true,
-            'username' => 'MYSQL_ADDON_PASSWORD',
-            'password' => 'MYSQL_ADDON_PASSWORD',
+            'username' => getenv('MYSQL_ADDON_USER'),
+            'password' => getenv('MYSQL_ADDON_PASSWORD'),
             'charset' => 'utf8mb4',
             'tablePrefix' => 'lime_',
         ),
